@@ -238,8 +238,12 @@
   }
 
   header.boxed{
-    display:none !important;
-  }  
+    display:flex !important;
+  }
+
+  contactsheader{
+
+  }
   
   #footer-left{text-align:center;}
 
@@ -325,7 +329,7 @@
   }
   
   header.boxed{
-    display:none !important;
+    display:flex !important;
   }  
   
   #footer-left{text-align:center;}

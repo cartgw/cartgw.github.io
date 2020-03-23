@@ -8,14 +8,21 @@ $('.close-modal').click(function(){
     elements.removeClass('active');
 });
 
-
 $(".promofor").click(function () {
-    let lol = $('[name="promo"]')[0].value.toLowerCase();
-    if(lol != "skrypin"){
+    if($('[name="promo"]')[0].value.toLowerCase() != "skrypin"){
         $(".promofor1").addClass("notpromo");
+        console.log($('[name="promo"]')[0]);
     }
     else{
         $(".promofor1").removeClass("notpromo");
         $(".modal-content form").submit();
+    }
+});
+
+$('[name="promo"]').blur(function () {
+    if($('[name="promo"]')[0].value.toLowerCase() == "skrypin"){
+        $(".procentspromo").removeClass("invis");
+    } else {
+        $(".procentspromo").addClass("invis");
     }
 });

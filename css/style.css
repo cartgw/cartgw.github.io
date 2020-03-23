@@ -916,3 +916,17 @@ button:focus {
 .notpromo{
   background-color: brown;
 }
+
+.procentspromo{
+  float: right;
+  display: flex;
+  position: absolute;
+  right: 32px;
+  top: 193px;
+  color: crimson;
+  font-weight: bolder;
+}
+
+.invis{
+  display: none;
+}
